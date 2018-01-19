@@ -8,29 +8,16 @@
     <title>Patatap Clone</title>
     <!-- Load the Paper.js library -->
     <script type="text/javascript" src="assets/js/lib/paper.js/dist/paper-full.min.js"></script>
+    <!-- Load the Howler.js library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.7/howler.min.js"></script>
     <!-- Define inlined Paperscript, associate it with myCanvas -->
-    <!-- <script type="text/paperscript" canvas="myCanvas"></script> -->
-    <!-- Define inlined Javascript -->
+    <script type="text/paperscript" src="assets/js/main.js" canvas="myCanvas"></script>
     <!-- css -->
     <link rel="stylesheet" href="assets/css/main.css">
-    <script>
-        window.onload = function() {
-            var canvas = document.getElementById("myCanvas");
-            paper.setup(canvas);
-            var path = new paper.Path();
-            path.strokeColor = "black";
-            var start = new paper.Point(100, 100);
-            path.moveTo(start);
-            path.lineTo(start.add([200, -50]));
-            paper.view.draw();
-        }
-    </script>
 </head>
 
 <body>
     <canvas id="myCanvas" resize></canvas>
-
-    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
 </html>
